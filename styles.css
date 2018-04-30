@@ -1,0 +1,995 @@
+*{
+  box-sizing:border-box;
+  padding: 0;
+  margin:0;
+}
+body{
+  margin:0;
+  font-family: 'Rubik', sans-serif, helvetica, arial;
+}
+
+img {
+  max-width:100%;
+}
+
+a {
+  text-decoration:none;
+  color:#fff;
+}
+
+a:hover {
+  color: #f5801f
+}
+
+li {
+  list-style:none;
+}
+
+p{
+  display:block;
+}
+h1,
+h2,
+p {
+  font-family: 'Rubik', sans-serif, helvetica, arial;
+}
+h1,
+h2 {
+  display:block;
+}
+/***********************************
+Main Styles Landing Page < 769px
+***********************************/
+#body-intro {
+  width:100%;
+  background:linear-gradient(rgba(0,0,0,.4), transparent),
+             linear-gradient(180deg, transparent,#000),
+             url("images/fun color.jpeg") no-repeat center/cover;
+}
+.logo {
+    width:350px;
+    padding: 15px;
+    margin:10px auto 0;
+    display: block;
+}
+
+.section-hero-bg {
+  text-align:center;
+  display:block;
+  margin: 0 auto;
+  width:100%;
+
+}
+
+.buttons {
+  display:block;
+  max-width:100%;
+  margin:200px auto;
+  text-align:center;
+  padding:30px 50px;
+  height:50vh;
+}
+
+.tickets,
+.enter {
+  display:inline-block;
+  width:50%;
+  margin: 0 30px;
+  outline:none;
+  padding:10px 40px;
+  margin: 30px;
+  border-radius: 10px;
+  border: 2px solid #f5801f;
+  background:#fff;
+  color:#f5801f;
+  font-family:'Rubik', sans-serif, helvetica, arial;
+  text-transform:uppercase;
+}
+
+.main-footer {
+  width:100%;
+  text-align:center;
+  padding:0 1em;
+  color: #fff;
+  font-size:14px;
+}
+
+.facebook,
+.instagram,
+.twitter {
+  display:inline-block;
+  width:40px;
+  padding: 0 5px;
+}
+
+/***********************************
+Home Page
+***********************************/
+
+.primary {
+  height:100vh;
+  /* border: 15px solid #f5801f; */
+  background: linear-gradient(rgba(0,0,0,2), transparent),
+              linear-gradient(180deg, transparent, #000),
+              url("images/Create Concert 2.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  background-position: center;
+
+}
+.main-header{
+  margin: 0 25px;
+}
+.home-logo{
+  width: 100px;
+  display: block;
+  margin: 10px 0;
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+.navbar {
+  text-align: center;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  /* left: 0; */
+  right:0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top:60px;/* padding-top: 60px; /* Place content 60px from the top */ */
+  transition: 0.7s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+.navbar li {
+  /* font-size:1.2em;
+  text-transform:uppercase;
+  padding:5px 15px; */
+  text-align: left;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.navbar a:hover {
+    color: #f1f1f1;
+}
+.navbar .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    margin-left: 25px;
+}
+.navbar {
+    right: 0;
+}
+@media screen and (max-height: 400px) {
+    .navbar {padding-top: 50px;}
+    .navbar a {font-size: 18px;}
+}
+
+.mainbanner {
+  width:75%;
+}
+.clock {
+  text-align: center;
+  color: #fff;
+  text-transform:uppercase;
+}
+.clock li {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.1em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.clock li span {
+  display: block;
+  font-size: 2.5rem;
+}
+
+.arrowb {
+  width:100px;
+}
+.container {
+  margin: 0 auto;
+  display:flex;
+  height:750px;
+}
+
+.about {
+  width:65%;
+  text-align: center;
+  padding:50px 0;
+  margin: auto;
+  font: 1em helvetica, arial, san-serif;
+  line-height: 1.5;
+}
+
+.createbg{
+  height:800px;
+  background: url("images/create. final.jpg") no-repeat center/cover;
+  max-width: 100%;
+  background-attachment: fixed;
+}
+/*********************************************************************
+Artist section
+*********************************************************************/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  border:1px solid #fff;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+.artist-section {
+  /* width:100%; */
+  background:#F5F5F5;
+}
+.artist {
+  font-size:2.3em;
+  text-align:center;
+  padding: 12% 10%;
+  color: #fff;
+  background: blue;
+
+}
+.artist-title {
+  font-size: 1.5em;
+  font-family: arial, sans-serif;
+  margin:100px auto;
+  padding: 0 15px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 4px solid #000;
+}
+
+.one,
+.three,
+.five,
+.seven{
+  background:linear-gradient(rgba(0, 0, 0, .5), transparent),
+             linear-gradient(0deg, rgba(0, 0, 0, .7),transparent),
+             url("images/j cole.jpg") no-repeat center/cover;
+}
+.two,
+.four,
+.six,
+.eight {
+  background:linear-gradient(rgba(0, 0, 0, .5), transparent),
+             linear-gradient(0deg, rgba(0, 0, 0, .7),transparent),
+             url("images/bruno.jpg") no-repeat center/cover;
+}
+.more-button{
+/*  display:block;*/
+  border: 2px solid #fff;
+  padding:15px 5px;
+  margin-top: 25px ;
+  font-size:50%;
+  text-transform:uppercase;
+}
+
+/****************************
+Tunes
+****************************/
+.music {
+  height:650px;
+  margin: auto;
+  background:linear-gradient(rgba(0,0,0,.7),transparent),
+             linear-gradient(0deg,rgba(0,0,0,.7),transparent),
+             url('images/TunesDj.jpg')no-repeat center/cover;
+}
+.tunesHeading {
+  font-size:1.5em;
+  color:#fff;
+  text-transform: uppercase;
+  text-align: right;
+  margin: 50px auto;
+  border: 2px solid #fff;
+  padding:5px 25px;
+}
+.tunesIntro {
+  color: #fff;
+}
+.tune{
+  padding:0 30px;
+  color:#fff;
+  font-size: .85em;
+  line-height:1.4;
+  font-weight:bold;
+  text-transform:uppercase;
+  text-align: center;
+}
+.musicIntro {
+  padding-bottom:50px;
+  width:75%;
+}
+
+.radio {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+/****************************
+Tickets
+****************************/
+
+#tickets {
+  height:850px;
+  background:linear-gradient(rgba(0, 0, 0, .7), transparent),
+             linear-gradient(0deg, rgba(0, 0, 0, .7),transparent),
+             url("images/tickets.jpg")no-repeat center/cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.ticketbtn {
+  padding:50px;
+  font-size:.8em;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #fff;
+  border: 10px solid #fff;
+  cursor:pointer;
+  background: none;
+}
+
+/*********************************************************************
+Merch section
+*********************************************************************/
+
+.merch-bg {
+  height: 800px;
+  background: linear-gradient(rgba(0, 0, 0, .7), transparent),
+              linear-gradient(0deg, rgba(0, 0, 0, .7),transparent),
+              url("images/T-shirt showcase.jpeg")no-repeat center/cover;
+  background-attachment: fixed;
+}
+.merch-content {
+  margin: auto;
+  padding: 50px;
+  font-family: helvetica, arial, sans-serif;
+  text-align:center;
+  text-transform: uppercase;
+  font-size:1.8em;
+  color: #fff;
+  border: 12px solid #fff;
+  /* orange #f5801f */
+
+}
+.merch-button {
+  font-size: .75em;
+  margin: 0 auto;
+  margin-top:10px;
+  text-transform: uppercase;
+  font-weight:bold;
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 10px;
+  background-color:#000;
+  border:none;
+  box-shadow: 0 2px 0 #fff;
+}
+.merch-button:hover{
+  background-color: #fff;
+  color:#000;
+
+}
+
+/*********************************************************************
+Gallery section
+*********************************************************************/
+#gallery {
+  width:100%;
+  margin:0 auto;
+  background:#fff;
+
+
+}
+
+.wpgallery {
+padding:10%;
+}
+
+.galleryTitle {
+  font-size:1.5em;
+  color:#000;
+  text-transform: uppercase;
+  text-align: right;
+  margin: 50px auto;
+  border: 4px solid #000;
+  padding:5px 25px;
+}
+
+.gal {
+  margin:10px;
+  padding:33%;
+  background:url('images/TunesDj.jpg')no-repeat center/cover;
+}
+
+
+/*********************************************************************
+Events section
+*********************************************************************/
+.upcomingEvents {
+  /* height:850px; */
+  padding:100px 0;
+  color:#fff;
+  text-align: center;
+  background:linear-gradient(rgb(0, 0, 0,.3), transparent),
+             linear-gradient(0deg, rgb(0, 0, 0),transparent),
+             url("images/festival dance.jpg")no-repeat center/cover;
+}
+.ue_header {
+  text-transform: uppercase;
+  rotate: 90;
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 2px .5px 10px #000;
+  text-align: center;
+
+}
+.events {
+  width:80%;
+  margin: auto;
+}
+.child {
+  border-radius: 5px;
+  padding:5px 15px;
+  margin:5px;
+  font-size: 1.25em;
+  text-transform:uppercase;
+  font-weight: bold;
+}
+.date: hover{
+  background: #fff;
+  transition: background-color .2s;
+}
+
+.day {
+  font-size:3em;
+  border-right:2px solid #fff;
+  padding-right:15px;
+}
+
+.event_mth{
+  padding-left:15px;
+}
+
+.event2,
+.event3,
+.event4,
+.event5 {
+  border-bottom: 2px solid #fff;
+  padding-bottom:15px;
+}
+.eventsButton {
+  border:2px solid #fff;
+  border-radius:10px;
+
+}
+.eventsButton:hover{
+  background:#fff;
+}
+
+.eventTics{
+  color:#fff;
+  cursor:pointer;
+}
+
+/*********************************************************************
+Faq section
+*********************************************************************/
+.section-bg {
+  height: 100%;
+  min-height: 100vh;
+}
+
+#faq {
+  min-height: 0;
+}
+
+#faq-section-bg {
+  background: #fff;
+  min-height: 0;
+  color:#fff;
+}
+
+.faq-section-content {
+  display: block;
+  width: 100%;
+}
+
+.search-panel {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  height: 200px;
+  color: #fff;
+}
+
+.search-panel h2 {
+  font-size: 48px;
+}
+
+.search-content {
+  width: 90%;
+  text-align: center;
+}
+#search-box {
+  width: 85%;
+  max-width: 350px;
+  margin: 20px 0;
+
+  border: 2px solid white;
+  color: white;
+  padding: 10px 10px;
+
+  font-family: Futura;
+  font-size: 16px;
+  letter-spacing: .5px;
+  font-weight: 400;
+
+  background: none;
+  text-transform: uppercase;
+}
+
+#search-icon {
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+#search-icon:hover {
+  cursor: pointer;
+}
+
+.questions-panel {
+  padding: 30px 10px;
+  color: #1A1A1A;
+
+}
+
+.question-container {
+  margin-bottom: 15px;
+}
+
+.question-container.filtered {
+  display: none;
+}
+
+.question-header {
+  padding: 20px 10px;
+  border: 1px solid #000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-header h2 {
+  font-size: 18px;
+  letter-spacing: .5px;
+  flex: 0 1 75%;
+  padding-left: 2%;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.question-header .img-container {
+  border: 1px solid #000;
+  padding: 10px;
+  transition: .35s ease;
+  -webkit-transition: .35s ease;
+  -moz-transition: .35s ease;
+  -o-transition: .35s ease;
+  color: #000;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.question-header .img-container:hover {
+  cursor: pointer;
+  background: #D00035;
+  color: #fff;
+}
+.question-header img {
+  width: 25px;
+}
+
+.question-content {
+  display: none;
+  padding: 20px 10px;
+}
+
+.question-content p {
+  font-size: 14px;
+  font-weight: 300;
+  max-width: 90%;
+}
+
+.question-content a {
+    color: #DF0035;
+}
+
+.faq{
+  text-align:center;
+  padding: 300px 0;
+  color: #fff;
+  font-size: 2em;
+  text-transform:uppercase;
+
+
+}
+.faq-wrap {
+  width:100%;
+  padding: 200px 0;
+  background:linear-gradient(rgba(0,0,0,.4), transparent),
+             linear-gradient(180deg, transparent,#000),
+             url("images/fun color.jpeg") no-repeat center/cover;
+}
+
+
+/**********************************************
+Sponsor section
+**********************************************/
+.sponsor-wrap {
+  margin:100px auto;
+  width:100%;
+}
+
+.sponsor-title {
+  font-size: 1.5em;
+  margin:100px auto;
+  text-transform:uppercase;
+  border:4px solid #000;
+  text-align: center;
+  padding: 0 15px;
+
+}
+.sponsors {
+  text-align: center;
+}
+.sponsor-logo {
+    width:50%;
+    padding:15px 50px;
+}
+
+
+/**********************************************
+Final backdrop
+**********************************************/
+.createBanner{
+margin:0 auto;
+  width:50%;
+}
+.becreate {
+  height: 450px;
+
+  background:linear-gradient(rgba(255, 255, 255,.6), transparent 10%),
+             linear-gradient(360deg, transparent,#fff),
+             url("images/banner-powder2.jpg")no-repeat center/cover;
+}
+/**********************************************
+Footer
+**********************************************/
+.home-footer{
+  text-align:center;
+  margin: 0 auto;
+  background:#000;
+  padding:30px 0;
+  font-size:1.2em;
+  color:#fff;
+}
+.contactDetails {
+  margin-bottom:25px;
+  text-align: center;
+
+}
+.contact,
+.address,
+.icons {
+    padding:15px 0;
+}
+
+.copyright{
+  font-size:.8em;
+}
+/**********************************************
+Media Query index page >= 769px
+**********************************************/
+
+@media (min-width:816px){
+
+  .logo {
+    width:30px;
+    padding: 15px;
+    margin:10px auto 0;
+  }
+  .section-hero-bg {
+    position:fixed;
+    left:0;
+    top:0;
+    height:100%;
+    z-index:-1000;
+    background:linear-gradient(rgba(0,0,0,.4), transparent),
+             linear-gradient(180deg, transparent,#000),
+             url("images/fun color.jpeg") no-repeat center/cover;
+  }
+
+  .buttons {
+    display:block;
+/*    padding:30px 50px;*/
+    padding: 11.8%;
+  }
+
+  .tickets,
+  .enter {
+    width:250px;
+    margin: 0 30px;
+    outline:none;
+    padding:10px 70px;
+    border-radius: 10px;
+    border: 2px solid #f5801f;
+    background:#fff;
+    color:#f5801f;
+    font-family:'Rubik', sans-serif, helvetica, arial;
+    text-transform:uppercase;
+  }
+
+  .facebook,
+  .instagram,
+  .twitter {
+    width:65px;
+  }
+
+  .main-footer {
+    font-size:16px;
+    position: absolute;
+    bottom:0;
+  }
+}
+
+/****************************
+Media Query home page
+****************************/
+
+
+@media (max-width: 350px) {
+      .arrow, .light .arrow {
+        background-size: 15px;
+        background-position: 10px 60%;
+      }
+
+
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+  background:url('artist 2.jpg')no-repeat center;
+  background-size:50%;
+
+  }
+.item-2{
+  background:url('artist 3.jpg')no-repeat center;
+   background-size:50%;
+}
+.item-3{
+  background:url('Artist.jpeg')no-repeat center;
+   background-size:50%;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  }
+  /* .sponsor-title{
+    margin:100px 50px;
+  } */
+  .home-footer {
+    font-size:.8em;
+    text-align: center;
+  }
+}
+
+/****************************
+Home Screen >= 769px
+****************************/
+
+@media screen and (min-width: 769px) {
+
+  .home-logo{
+    width: 175px;
+  }
+  .clock li {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+
+  .clock li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+  .about {
+    width:65%;
+    text-align: center;
+    padding:50px 0;
+    margin: auto;
+    font: 1.5em helvetica, arial, san-serif;
+    line-height: 1.5;
+  }
+
+  .artist-title {
+    font-size: 2.5em;
+  }
+
+  .tunesHeading{
+    font-size:2.5em;
+  }
+  .tune{
+    padding:0 30px;
+    color:#fff;
+    font-size: 2.1em;
+    line-height:1.2;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-align: left;
+  }
+  .musicIntro{
+    width: 30%;
+}
+.ticketbtn {
+  padding:150px;
+  font-size:2.8em;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+  .galleryTitle {
+    font-size:2.5em;
+  }
+  .day {
+    font-size:3em;
+    border-right:2px solid #fff;
+    padding-right:15px;
+  }
+
+  .festival{
+    font-size:2em;
+  }
+
+  .merch-content{
+    margin: auto;
+    padding: 150px;
+    text-align:center;
+    font-size:3em;
+    border: 20px solid #fff;
+  }
+
+  .ue_header {
+    text-transform: uppercase;
+    rotate: 90;
+    font-size: 1.6em;
+    color: #fff;
+    text-shadow: 2px .5px 10px #000;
+    text-align: center;
+  }
+
+  .sponsor-title {
+    font-size: 2.5em;
+  }
+
+  #faq {
+    /* min-height: 100vh; */
+  }
+
+  #faq-section-bg {
+    /* min-height: 100vh; */
+  }
+
+  .faq-section-content {
+    display: flex;
+  }
+  .faq-panel {
+    /* min-height: 100vh; */
+  }
+
+  .search-panel {
+    flex: 0 1 40%;
+    align-items: flex-start;
+    padding-top: 40vh;
+    /* min-height: 100vh; */
+    height: inherit;
+  }
+  .search-panel h2 {
+    font-size: 72px;
+  }
+  .questions-panel {
+    padding: 50px 30px;
+    flex: 0 1 60%;
+    overflow: hidden;
+    height: 100vh;
+  }
+  .questions-panel-inner {
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    padding-right: 10px;
+  }
+  .question-header {
+    padding: 20px;
+  }
+  .question-header h2 {
+    font-size: 24px;
+    flex: 0 1 65%;
+  }
+  .question-header .img-container {
+    padding: 25px;
+  }
+
+  .question-content {
+    padding: 20px 30px;
+  }
+  .question-content p {
+    max-width: 75%;
+    font-size: 16px;
+  }
+  .becreate {
+    height: 100vh;
+  }
+
+  .contactDetails {
+      text-align: left;
+  }
+}
+@media (min-width:1025px){
+  .tune{
+    padding:0 30px;
+    color:#fff;
+    font-size: 2.5em;
+    line-height:1.2;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-align: left;
+  }
+  .musicIntro{
+    width: 25%;
+  }
+}

@@ -1,0 +1,250 @@
+@media (min-width:350px){
+  .primary,
+  .main-header{
+    display: flex;
+    flex-direction: column;
+  }
+  .main-header {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-header,
+  .navbar {
+    justify-content: center;
+    align-items: center;
+  }
+  .home-logo{
+    margin-right:auto;
+  }
+
+  .mainbanner {
+    margin: auto;
+    align-self: center;
+  }
+  .clock{
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .arrowb{
+    align-self: flex-end;
+    margin: 0 auto;
+  }
+  .artist-section{
+    display:flex;
+    flex-direction: column;
+  }
+  .artist-title {
+    display:flex;
+    justify-content:center;
+  }
+
+  .music,
+  .radio {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+#tickets {
+  display:flex;
+  align-items: center;
+}
+
+  .merch-bg,
+  .apparell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #gallery,
+  .galleryTitle{
+    display:flex;
+    flex-direction: column;
+  }
+
+.galleryRow {
+  display:flex;
+  flex-wrap:wrap;
+  padding:0 4px;
+}
+.galcolumn {
+  flex:100%;
+  max-width:100%;
+}
+
+  .upcoming_events,
+  .ue_header,
+  .child,
+  .event1,
+  .event2,
+  .event3,
+  .event4,
+  .event5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .date{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sponsor-wrap{
+    display:flex;
+    flex-direction: column;
+  }
+  .becreate,
+  .createBanner{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
+}
+/*********************************************
+  Width 769px >
+*********************************************/
+@media (min-width:769px) {
+
+
+
+  .artist-section,
+  .artist-line {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .artist-line {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .artist {
+    flex-grow: 1;
+  }
+
+  .radio {
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .merch-bg,
+  .apparell {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .galcolumn {
+    flex: 50%;
+    max-width:50%;
+  }
+
+
+  /* .gallery,
+  .wpgallery,
+  .galcolumnone,
+  .galcolumntwo,
+  .galcolumnthree {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+  } */
+
+  .upcomingEventsWrapper,
+  .ue_header,
+  .child,
+  .event1,
+  .event2,
+  .event3,
+  .event4,
+  .event5 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .event1,
+  .event2,
+  .event3,
+  .event4,
+  .event5 {
+    flex-direction:row;
+    border-bottom: 2px solid lightgrey;
+    padding-bottom: 5px;
+
+  }
+
+  .ue_header {
+    align-items: center;
+    margin-top:50px;
+  }
+  .date {
+      margin-right: auto;
+  }
+  .festival{
+
+    justify-content: center;
+  }
+  .country,
+  .button{
+    justify-content: center;
+  }
+  .date{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .event_mth {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-left:15px;
+  }
+  .sponsor-wrap,
+  .sponsors {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+
+  }
+  .home-footer,
+  .contactDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .contactDetails {
+    flex-direction: row;
+  }
+  .contact {
+    flex-direction:column;
+  }
+  .address {
+    flex-direction:column;
+  }
+
+
+}
+
+@media (min-width:1025px){
+  .sponsors {
+    display:flex;
+    flex-direction:row;
+  }
+  .galcolumn {
+    flex:33.3%;
+    max-width:75%;
+  }
+
+}
