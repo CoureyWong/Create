@@ -120,7 +120,7 @@ Home Page
   margin: 0 25px;
 }
 .home-logo{
-  width: 100px;
+  width: 150px;
   display: block;
   margin: 10px 0;
 }
@@ -171,9 +171,9 @@ Home Page
 .navbar {
     right: 0;
 }
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 320px) {
     .navbar {padding-top: 50px;}
-    .navbar a {font-size: 18px;}
+    .navbar a {font-size: 25px;}
 }
 
 .mainbanner {
@@ -217,10 +217,9 @@ Home Page
 }
 
 .createbg{
-  height:800px;
+  height:400px;
   background: url("images/create. final.jpg") no-repeat center/cover;
   max-width: 100%;
-  background-attachment: fixed;
 }
 /*********************************************************************
 Artist section
@@ -335,11 +334,10 @@ Tickets
 ****************************/
 
 #tickets {
-  height:850px;
+  height:400px;
   background:linear-gradient(rgba(0, 0, 0, .7), transparent),
              linear-gradient(0deg, rgba(0, 0, 0, .7),transparent),
              url("images/tickets.jpg")no-repeat center/cover;
-  background-attachment: fixed;
   background-position: center;
 }
 .ticketbtn {
@@ -362,7 +360,6 @@ Merch section
   background: linear-gradient(rgba(0, 0, 0, .7), transparent),
               linear-gradient(0deg, rgba(0, 0, 0, .7),transparent),
               url("images/T-shirt showcase.jpeg")no-repeat center/cover;
-  background-attachment: fixed;
 }
 .merch-content {
   margin: auto;
@@ -775,7 +772,7 @@ Media Query home page
 ****************************/
 
 
-@media (max-width: 350px) {
+@media (max-width: 320px) {
       .arrow, .light .arrow {
         background-size: 15px;
         background-position: 10px 60%;
@@ -819,10 +816,14 @@ Media Query home page
   /* .sponsor-title{
     margin:100px 50px;
   } */
+  .becreate {
+    height: 350px;
+}
   .home-footer {
     font-size:.8em;
     text-align: center;
   }
+
 }
 
 /****************************
@@ -874,13 +875,22 @@ Home Screen >= 769px
   }
   .musicIntro{
     width: 30%;
-}
-.ticketbtn {
-  padding:150px;
-  font-size:2.8em;
-  margin: 0 auto;
-  text-transform: uppercase;
-}
+  }
+  .ticketbtn {
+    padding:150px;
+    font-size:2.8em;
+    margin: 0 auto;
+    text-transform: uppercase;
+  }
+  .createbg {
+    height: 800px;
+    background-attachment: fixed;
+  }
+
+  #tickets {
+    height: 850px;
+    background-attachment: fixed;
+  }
 
   .galleryTitle {
     font-size:2.5em;
