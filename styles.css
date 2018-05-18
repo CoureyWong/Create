@@ -107,14 +107,10 @@ Home Page
 ***********************************/
 
 .primary {
-  height:100vh;
-  /* border: 15px solid #f5801f; */
+  height:50vh;
   background: linear-gradient(rgba(0,0,0,2), transparent),
               linear-gradient(180deg, transparent, #000),
               url("images/Create Concert 2.jpg") no-repeat center/cover;
-  background-attachment: fixed;
-  background-position: center;
-
 }
 .main-header{
   margin: 0 25px;
@@ -147,9 +143,6 @@ Home Page
 
 
 .navbar li {
-  /* font-size:1.2em;
-  text-transform:uppercase;
-  padding:5px 15px; */
   text-align: left;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -184,12 +177,15 @@ Home Page
   color: #fff;
   text-transform:uppercase;
 }
+.clockHeading {
+  font-size: 1.2em;
+}
 .clock li {
   display: inline-block;
   color: #fff;
-  font-size: 1.1em;
+  font-size: .95em;
   list-style-type: none;
-  padding: 1em;
+  padding: .90em;
   text-transform: uppercase;
 }
 
@@ -201,22 +197,27 @@ Home Page
 .arrowb {
   width:100px;
 }
+
 .container {
   margin: 0 auto;
   display:flex;
-  height:750px;
+  height:400px;
 }
 
 .about {
-  width:65%;
+  width:100%;
   text-align: center;
-  padding:50px 0;
+  padding:25px 10px;
   margin: auto;
-  font: 1em helvetica, arial, san-serif;
+  font: 1em helvetica, arial, sans-serif;
   line-height: 1.5;
 }
 
-.createbg{
+p:first-child {
+  margin-bottom: 30px;
+}
+
+.createbg {
   height:400px;
   background: url("images/create. final.jpg") no-repeat center/cover;
   max-width: 100%;
@@ -240,18 +241,8 @@ Artist section
   padding: 15px;
   border-radius: 4px;
 }
-.artist-section {
-  /* width:100%; */
-  background:#F5F5F5;
-}
-.artist {
-  font-size:2.3em;
-  text-align:center;
-  padding: 12% 10%;
-  color: #fff;
-  background: blue;
 
-}
+
 .artist-title {
   font-size: 1.5em;
   font-family: arial, sans-serif;
@@ -262,24 +253,7 @@ Artist section
   border: 4px solid #000;
 }
 
-.one,
-.three,
-.five,
-.seven{
-  background:linear-gradient(rgba(0, 0, 0, .5), transparent),
-             linear-gradient(0deg, rgba(0, 0, 0, .7),transparent),
-             url("images/j cole.jpg") no-repeat center/cover;
-}
-.two,
-.four,
-.six,
-.eight {
-  background:linear-gradient(rgba(0, 0, 0, .5), transparent),
-             linear-gradient(0deg, rgba(0, 0, 0, .7),transparent),
-             url("images/bruno.jpg") no-repeat center/cover;
-}
 .more-button{
-/*  display:block;*/
   border: 2px solid #fff;
   padding:15px 5px;
   margin-top: 25px ;
@@ -287,40 +261,123 @@ Artist section
   text-transform:uppercase;
 }
 
+.artistContainer{
+  padding: 1em 0;
+  clear:left;
+}
+
+.artistContainer .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.artcontent {
+  position: relative;
+  width: 90%;
+  max-width: 450px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.artcontent .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.artcontent:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.artcontent:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 30%;
+}
+
 /****************************
 Tunes
 ****************************/
 .music {
-  height:650px;
+  height:auto;
   margin: auto;
+  padding: 25px 0;
   background:linear-gradient(rgba(0,0,0,.7),transparent),
              linear-gradient(0deg,rgba(0,0,0,.7),transparent),
              url('images/TunesDj.jpg')no-repeat center/cover;
 }
+
 .tunesHeading {
   font-size:1.5em;
   color:#fff;
   text-transform: uppercase;
-  text-align: right;
+  text-align: center;
   margin: 50px auto;
   border: 2px solid #fff;
   padding:5px 25px;
 }
+
 .tunesIntro {
   color: #fff;
 }
-.tune{
-  padding:0 30px;
-  color:#fff;
-  font-size: .85em;
-  line-height:1.4;
-  font-weight:bold;
+
+.musicIntro {
+  padding-bottom:30px;
+  width:65%;
   text-transform:uppercase;
   text-align: center;
-}
-.musicIntro {
-  padding-bottom:50px;
-  width:75%;
+  line-height:1.4;
+  font-size: 1.2em;
+  color:#fff;
+  font-weight:bold;
 }
 
 .radio {
@@ -347,9 +404,11 @@ Tickets
   text-transform: uppercase;
   color: #fff;
   border: 10px solid #fff;
+  border-radius:10px;
   cursor:pointer;
   background: none;
 }
+
 
 /*********************************************************************
 Merch section
@@ -381,26 +440,22 @@ Merch section
   font-weight:bold;
   padding: 10px 25px;
   color: #fff;
+  border:2px solid #fff;
   border-radius: 10px;
   background-color:#000;
-  border:none;
-  box-shadow: 0 2px 0 #fff;
 }
 .merch-button:hover{
   background-color: #fff;
   color:#000;
-
 }
 
 /*********************************************************************
 Gallery section
 *********************************************************************/
 #gallery {
-  width:100%;
-  margin:0 auto;
+  /* width:90%; */
+  /* margin:0 auto; */
   background:#fff;
-
-
 }
 
 .wpgallery {
@@ -422,6 +477,42 @@ padding:10%;
   padding:33%;
   background:url('images/TunesDj.jpg')no-repeat center/cover;
 }
+
+.galleryWrapper{
+  width:90%;
+  margin: 0 auto 25px;
+  background:linear-gradient(rgba(0,0,0,.7),transparent),
+             linear-gradient(0deg,rgba(0,0,0,.7),transparent),
+             url('images/artist 2.jpg')no-repeat center/cover;
+}
+
+.gallerybd{
+  height:200px;
+}
+
+.galheading{
+  font-size: 2em;
+  color:#fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+.gallerybtn {
+  background:#fff;
+  border-radius:20px;
+  font-size:.25em;
+  text-transform: uppercase;
+  padding:10px 0;
+  width:50%;
+  margin:0 auto;
+  text-align: center;
+}
+.gallerybtn:hover {
+  background:#ffd;
+}
+
+
 
 
 /*********************************************************************
@@ -496,35 +587,6 @@ Events section
 /*********************************************************************
 Faq section
 *********************************************************************/
-.section-bg {
-  height: 100%;
-  min-height: 100vh;
-}
-
-#faq {
-  min-height: 0;
-}
-
-#faq-section-bg {
-  background: #fff;
-  min-height: 0;
-  color:#fff;
-}
-
-.faq-section-content {
-  display: block;
-  width: 100%;
-}
-
-.search-panel {
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 200px;
-  height: 200px;
-  color: #fff;
-}
 
 .search-panel h2 {
   font-size: 48px;
@@ -534,6 +596,7 @@ Faq section
   width: 90%;
   text-align: center;
 }
+
 #search-box {
   width: 85%;
   max-width: 350px;
@@ -561,10 +624,26 @@ Faq section
   cursor: pointer;
 }
 
+.questions {
+  padding: 30px 10px;
+  color: #1A1A1A;
+  width:100%;
+  overflow-y: scroll;
+  height:inherit;
+}
+
+.search-panel {
+  background-color: #f5801f;
+  min-height: 200px;
+  height: 400px;
+  color: #fff;
+  width:100%;
+  height: inherit;
+}
+
 .questions-panel {
   padding: 30px 10px;
   color: #1A1A1A;
-
 }
 
 .question-container {
@@ -578,10 +657,6 @@ Faq section
 .question-header {
   padding: 20px 10px;
   border: 1px solid #000;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .question-header h2 {
@@ -629,22 +704,10 @@ Faq section
     color: #DF0035;
 }
 
-.faq{
-  text-align:center;
-  padding: 300px 0;
-  color: #fff;
-  font-size: 2em;
-  text-transform:uppercase;
-
-
+.question-content.open{
+  display: block;
 }
-.faq-wrap {
-  width:100%;
-  padding: 200px 0;
-  background:linear-gradient(rgba(0,0,0,.4), transparent),
-             linear-gradient(180deg, transparent,#000),
-             url("images/fun color.jpeg") no-repeat center/cover;
-}
+
 
 
 /**********************************************
@@ -682,7 +745,6 @@ margin:0 auto;
 }
 .becreate {
   height: 450px;
-
   background:linear-gradient(rgba(255, 255, 255,.6), transparent 10%),
              linear-gradient(360deg, transparent,#fff),
              url("images/banner-powder2.jpg")no-repeat center/cover;
@@ -694,22 +756,23 @@ Footer
   text-align:center;
   margin: 0 auto;
   background:#000;
-  padding:30px 0;
+  padding:30px 18px;
   font-size:1.2em;
   color:#fff;
 }
 .contactDetails {
   margin-bottom:25px;
   text-align: center;
-
 }
+
 .contact,
 .address,
 .icons {
     padding:15px 0;
+    text-align:center;
 }
 
-.copyright{
+.copyright {
   font-size:.8em;
 }
 /**********************************************
@@ -772,7 +835,7 @@ Media Query home page
 ****************************/
 
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
       .arrow, .light .arrow {
         background-size: 15px;
         background-position: 10px 60%;
@@ -780,65 +843,29 @@ Media Query home page
 
 
 
-/*Select every element*/
-[id^="item"] {
-    display: none;
-  }
 
-.item-1 {
-    z-index: 2;
-    opacity: 1;
-  background:url('artist 2.jpg')no-repeat center;
-  background-size:50%;
 
-  }
-.item-2{
-  background:url('artist 3.jpg')no-repeat center;
-   background-size:50%;
-}
-.item-3{
-  background:url('Artist.jpeg')no-repeat center;
-   background-size:50%;
-}
-
-*:target ~ .item-1 {
-    opacity: 0;
-  }
-
-#item-1:target ~ .item-1 {
-    opacity: 1;
-  }
-
-#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
-    z-index: 3;
-    opacity: 1;
-  }
-  /* .sponsor-title{
-    margin:100px 50px;
-  } */
-  .becreate {
-    height: 350px;
-}
-  .home-footer {
-    font-size:.8em;
-    text-align: center;
-  }
-
-}
 
 /****************************
 Home Screen >= 769px
 ****************************/
 
-@media screen and (min-width: 769px) {
-
+@media (min-width: 768px) {
+  .primary {
+    height:100vh;
+    background-attachment: fixed;
+    background-position: center;
+  }
   .home-logo{
     width: 175px;
+  }
+  .clockHeading {
+    font-size: 3em;
   }
   .clock li {
     display: inline-block;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 2.5em;
     list-style-type: none;
     padding: 1em;
     text-transform: uppercase;
@@ -848,12 +875,12 @@ Home Screen >= 769px
     display: block;
     font-size: 4.5rem;
   }
+  .container {
+    height:750px;
+  }
   .about {
-    width:65%;
-    text-align: center;
-    padding:50px 0;
-    margin: auto;
-    font: 1.5em helvetica, arial, san-serif;
+    width:60%;
+    font: 1.5em helvetica, arial, sans-serif;
     line-height: 1.5;
   }
 
@@ -873,28 +900,45 @@ Home Screen >= 769px
     text-transform:uppercase;
     text-align: left;
   }
-  .musicIntro{
-    width: 30%;
-  }
+
   .ticketbtn {
     padding:150px;
     font-size:2.8em;
     margin: 0 auto;
     text-transform: uppercase;
   }
-  .createbg {
-    height: 800px;
-    background-attachment: fixed;
+  .ticketbtn:hover {
+    background-color: #fff;
+    color:#000;
   }
 
   #tickets {
     height: 850px;
     background-attachment: fixed;
   }
+  .galleryWrapper{
+    width:75%;
+  }
 
   .galleryTitle {
     font-size:2.5em;
   }
+
+  .gallerybd{
+    height:350px;
+  }
+
+  .galheading {
+    font-size: 4.5em;
+  }
+  .gallerybtn {
+    font-size:1.2em;
+  }
+
+  .gallerybtn:hover {
+    background:#ffd;
+  }
+
   .day {
     font-size:3em;
     border-right:2px solid #fff;
@@ -926,28 +970,18 @@ Home Screen >= 769px
     font-size: 2.5em;
   }
 
-  #faq {
-    /* min-height: 100vh; */
-  }
+
 
   #faq-section-bg {
     /* min-height: 100vh; */
   }
 
-  .faq-section-content {
-    display: flex;
-  }
+
   .faq-panel {
     /* min-height: 100vh; */
   }
 
-  .search-panel {
-    flex: 0 1 40%;
-    align-items: flex-start;
-    padding-top: 40vh;
-    /* min-height: 100vh; */
-    height: inherit;
-  }
+
   .search-panel h2 {
     font-size: 72px;
   }
@@ -981,9 +1015,7 @@ Home Screen >= 769px
     max-width: 75%;
     font-size: 16px;
   }
-  .becreate {
-    height: 100vh;
-  }
+
 
   .contactDetails {
       text-align: left;
@@ -999,7 +1031,28 @@ Home Screen >= 769px
     text-transform:uppercase;
     text-align: left;
   }
+  .createbg {
+    height: 800px;
+    background-attachment: fixed;
+  }
   .musicIntro{
-    width: 25%;
+    width: 35%;
+    font-size:1.65em;
+    text-align: center;
+  }
+  #faq {
+    /* min-height: 100vh; */
+    display:flex;
+    flex-direction: row;
+  }
+  .faq-section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .becreate {
+    height: 100vh;
   }
 }
